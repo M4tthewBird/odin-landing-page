@@ -12,7 +12,8 @@ body {
 img {
   width: 640px;
   height: 400px;
-  padding: 0 24px;
+  margin: 0 24px;
+  border-radius: 8px;
 }
 
 .header,
@@ -51,7 +52,7 @@ img {
 
 .hero-main {
   font-size: 48px;
-  font-weight: bolder;
+  font-weight: 800;
 }
 
 .hero-secondary {
@@ -61,7 +62,7 @@ img {
 
 
 button {
-  border: solid;
+  border: none;
   border-radius: 8px;
   background: #3882F6;
   color: #F9FAF8;
@@ -83,17 +84,34 @@ a {
   color: #E5E7EB;
 }
 
-.header {
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px
 }
 
-.footer {
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 48px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
 }
 
 .icon {
-  width: 50px;
+  width: 100px;
   height: auto;
+  padding: 24px;
 }
 
+.info {
+  max-width: 300px;
+}
 
 
 .left-links, .right-links {
