@@ -3,7 +3,7 @@
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: auto;
   font-family: 'Hero New', sans-serif;
   display: flex;
   flex-direction: column;
@@ -113,21 +113,52 @@ a {
   max-width: 300px;
 }
 
+.third-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: block;
+}
+
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.quote {
+  display: flex;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1F2937; 
+  text-align:justify;
+  margin-bottom: 8px;
+}
+
+.author {
+  display: flex;
+  font-size: 24px;
+  font-style: italic;
+  color: black; 
+  font-weight: bold;
+  align-self: flex-end;
+}
 
 .left-links, .right-links {
+  display: flex;
   padding: 16px;
   margin: 8px;
   gap: 16px;
 }
 
 .left-links {
-  display: flex;
   color: #F9FAF8;
   font-weight: bold;
   font-size: 24px;
 }
 
 .right-links {
-  display: flex;
   font-size: 18px;
 }
