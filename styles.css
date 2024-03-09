@@ -9,10 +9,11 @@ body {
   flex-direction: column;
 }
 
-img {
+.img-photo {
   width: 640px;
   height: 400px;
-  margin: 0 24px;
+  margin-left: 24px;
+  margin-right: 0px;
   border-radius: 8px;
 }
 
@@ -23,12 +24,23 @@ img {
   color: #F9FAF8;
 }
 
-.header,
+/* .header,
 .footer {
   display: flex;
   justify-content: space-around;
-  padding: 0 48px;
+  padding: 0 64px;
   align-items: center;
+} */
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
 }
 
 .third-container {
@@ -40,14 +52,15 @@ img {
 .third-container,
 .fourth-container {
   display: flex;
+
   flex: 1;
   justify-content: center;
+  align-items: center;
   padding: 64px 0;
 }
 
 .left-container {
-  width: 640px;
-  height: 400px;
+  flex-basis: 50%;
 }
 
 .hero-main {
@@ -61,13 +74,24 @@ img {
 }
 
 
-button {
+.button-normal {
   border: none;
   border-radius: 8px;
   background: #3882F6;
   color: #F9FAF8;
   margin: 16px 0;
-  padding: 8px 24px;
+  padding: 8px 32px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button-reversed {
+  border: solid;
+  border-radius: 8px;
+  background: #3882F6;
+  color: #F9FAF8;
+  margin: 16px 0;
+  padding: 8px 32px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -96,6 +120,7 @@ a {
   justify-content: space-between;
   gap: 48px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -146,19 +171,45 @@ a {
   align-self: flex-end;
 }
 
-.left-links, .right-links {
+.blue-container {
   display: flex;
-  padding: 16px;
-  margin: 8px;
-  gap: 16px;
+  justify-content: space-between;
+  padding: 48px 128px;
+  background-color: #3882F6;
+  width: 1200px;
+  height: auto;
+  border-radius: 8px;
 }
 
-.left-links {
+.left-blue {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  }
+
+.header-logo {
   color: #F9FAF8;
   font-weight: bold;
   font-size: 24px;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.left-links, .right-links {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  gap: 16px;
+}
+
+.left-links {
+  align-items: flex-start;
+}
+
 .right-links {
   font-size: 18px;
+  justify-content: flex-end;
 }
