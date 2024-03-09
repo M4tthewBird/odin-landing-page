@@ -1,33 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/hero-new');
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: 'Hero New', sans-serif;
   display: flex;
   flex-direction: column;
 }
 
 img {
-  width: 600px;
+  width: 640px;
+  height: 400px;
+  padding: 0 24px;
 }
+
+.header,
+.first-container,
+.footer {
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 48px;
+  align-items: center;
+}
+
+.third-container {
+  background-color: #E5E7EB;
+}
+
+.first-container,
+.second-container,
+.third-container,
+.fourth-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 64px 0;
+}
+
+.left-container {
+  width: 640px;
+  height: 400px;
+}
+
+.hero-main {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.hero-secondary {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
 
 button {
-  font-family: Roboto, sans-serif;
-  border: none;
+  border: solid;
   border-radius: 8px;
-  background: #eee;
-  padding: 8px 16px;
-  font-size: 16px;
-}
-
-input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
+  background: #3882F6;
+  color: #F9FAF8;
+  margin: 16px 0;
   padding: 8px 24px;
-  width: 400px;
-  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 ul {
@@ -39,14 +80,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgb(68, 68, 68);
-  font-size: 16px;
+  color: #E5E7EB;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  background-color: #1F2937;
+}
+
+.footer {
 }
 
 .icon {
@@ -54,25 +94,22 @@ a {
   height: auto;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex: 1;
-  gap: 8px;
-}
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: #eeeeee;
-}
 
 .left-links, .right-links {
-  display: flex;
   padding: 16px;
   margin: 8px;
   gap: 16px;
-  color: white;
+}
+
+.left-links {
+  display: flex;
+  color: #F9FAF8;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.right-links {
+  display: flex;
+  font-size: 18px;
 }
